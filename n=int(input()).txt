@@ -1,0 +1,20 @@
+n=int(input())
+str=input()
+if(n==len(str)):
+    if(n>0):
+        for i in range(n):
+            if str[i]=='a':
+                c1+=1
+            elif str[i]=='b':
+                c2+=1
+    
+        if(c1==c2):
+            print('tie')
+        elif(c1>c2):
+            print('team A wins')
+        elif(c2>c2):
+            print('team B wins')
+        else:
+            print('invalid')
+else:
+    print('invalid input')
